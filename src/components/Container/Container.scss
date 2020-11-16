@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  max-width: 600px;
+  padding: 10rem 2rem;
+  margin: 0 auto;
+  flex-direction: column;
+
+  &--dark {
+    background: #181818;
+    color: #fff;
+  }
+
+  &--light {
+    background: linear-gradient(to top, #fff, #eee, #fff);
+    color: #181818;
+  }
+}

@@ -1,0 +1,18 @@
+.card {
+  border-radius: 50px;
+  border-radius: 8px;
+  padding: 2rem;
+  padding-bottom: 4rem;
+  margin-bottom: 4rem;
+  box-shadow: 0 16px 32px -16px #000;
+
+  &--dark {
+    background: #232526;
+    color: #fff;
+  }
+
+  &--light {
+    background: #fff;
+    color: #232526;
+  }
+}

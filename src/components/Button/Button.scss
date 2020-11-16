@@ -1,0 +1,108 @@
+.btn {
+  font-family: 'Livvic', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  color: #fff;
+  border: none;
+
+  &:focus {
+    outline: none;
+  }
+
+  // Button Sizes
+
+  &--flex--medium {
+    padding: 10px 20px;
+    width: 100%;
+    font-size: 1.8rem;
+  }
+
+  &--flex--small {
+    padding: 8px 10px;
+    width: 100%;
+    font-size: 1.5rem;
+  }
+
+  &--medium {
+    padding: 10px 20px;
+    font-size: 1.8rem;
+  }
+
+  &--small {
+    padding: 8px 10px;
+    font-size: 1.5rem;
+  }
+
+  // Button colors
+
+  &--purple {
+    &--solid {
+      background-color: #72f;
+      background: linear-gradient(135deg, #72f, #c1b);
+    }
+    &--outline {
+      background: transparent;
+      border: 2px solid #72f;
+    }
+  }
+
+  &--pink {
+    &--solid {
+      background-color: #bc4e9c;
+      background: linear-gradient(135deg, #bc4e9c, #c1b);
+    }
+    &--outline {
+      background: transparent;
+      border: 2px solid #bc4e9c;
+    }
+  }
+
+  &--yellow {
+    &--solid {
+      background-color: #f7ff00;
+      background: linear-gradient(135deg, #f7ff00, #db36a4);
+    }
+    &--outline {
+      background: transparent;
+      border: 2px solid #f7ff00;
+    }
+  }
+
+  &--blue {
+    &--solid {
+      background-color: #00b4db;
+      background: linear-gradient(135deg, #00b4db, #0083b0);
+    }
+    &--outline {
+      background: transparent;
+      border: 2px solid #00b4db;
+    }
+  }
+
+  &--green {
+    &--solid {
+      background-color: #0c8;
+      background: linear-gradient(135deg, #0c8, #0c8);
+    }
+    &--outline {
+      background: transparent;
+      border: 2px solid #0c8;
+    }
+  }
+
+  &--red {
+    &--solid {
+      background-color: #e52d27;
+      background: linear-gradient(135deg, #e52d27, #b31217);
+    }
+    &--outline {
+      background: transparent;
+      border: 2px solid #e52d27;
+    }
+  }
+}

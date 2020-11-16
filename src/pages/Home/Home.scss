@@ -1,0 +1,17 @@
+.home {
+  margin: 0 auto;
+  display: flex;
+  width: 300px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background: linear-gradient(to top, #181818, #232526, #1c1d1e);
+  color: #fff;
+  text-align: center;
+
+  button {
+    width: 200px;
+    margin: 1rem 0;
+  }
+}
