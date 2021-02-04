@@ -34,12 +34,16 @@ export const WorkHistory = () => {
     setLoading(false);
   }, []);
 
-  const workDate = (timestamp) =>
-    new Date(timestamp).toLocaleDateString({
+  const workDate = (timestamp) => {
+    if (!timestamp) {
+        return "On going"
+    }
+    return new Date(timestamp).toLocaleDateString({
       year: 'numeric',
       month: 'numeric',
       day: 'numeric',
     });
+}
 
   const showMoreItems = () => {
     setVisible((prevValue) => prevValue + 3);
@@ -70,8 +74,7 @@ export const WorkHistory = () => {
                   <List>
                     <ListItem>
                       <Typography variant='h3'>
-                        {workDate(entry.fields.startDate)} -{' '}
-                        {workDate(entry.fields.endDate)}
+                      {workDate(entry.fields.startDate)} - {workDate(entry.fields.endDate) && workDate(entry.fields.endDate)}
                       </Typography>
                     </ListItem>
                     <ListItem>
