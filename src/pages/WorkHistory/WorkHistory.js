@@ -25,7 +25,7 @@ export const WorkHistory = () => {
     client
       .getEntries({
         content_type: 'workHistory',
-        order: '-fields.endDate',
+        order: 'fields.id',
       })
       .then((response) => {
         setLoading(true);
